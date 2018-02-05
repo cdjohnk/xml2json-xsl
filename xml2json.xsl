@@ -4,8 +4,8 @@
     <!-- Convert XML to JSON. XML Nodes must be ordered for JSON object arrays to be properly parsed.
         Attributes on parent nodes that are parsed into an array will not be captured -->
     
-    <xsl:template match="/">
-        <xsl:apply-templates select="*"/>
+    <xsl:template match="/">{
+        <xsl:apply-templates select="*"/>}
     </xsl:template>
     
     <xsl:template match="*">
